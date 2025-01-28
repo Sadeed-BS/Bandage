@@ -1,4 +1,3 @@
-import { ToastContainer } from 'react-toastify'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Doctors from './pages/Doctors'
@@ -8,12 +7,14 @@ import Login from './pages/Login'
 import MyProfile from './pages/MyProfile'
 import MyAppointments from './pages/MyAppointments'
 import Appointment from './pages/Appointment'
+import Header from './components/Header'
 
 function App() {
 
   return (
     <div className='mx-4 sm:mx-[10%]'>
-      <ToastContainer />
+
+      <Header />
 
       <Routes>
         <Route path='/' element={<Home />} />
